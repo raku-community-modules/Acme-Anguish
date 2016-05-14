@@ -1,0 +1,13 @@
+{
+    "perl"         : "6.c",
+    "name"         : "Acme::Anguish",
+    "version"      : "1.001001",
+    "description"  : "Use Anguish programming language in your Perl 6 programs",
+    "depends"      : [ "Term::termios" ],
+    "test-depends" : [ "Test", "Test::Output" ],
+    "provides"     : {
+        "Inline::Brainfuck" : "lib/Acme/Anguish.pm6"
+    },
+    "authors"      : [ "Zoffix Znet" ],
+    "support"      : {"source"   : "git://github.com/zoffixznet/perl6-Acme-Anguish.git"}
+}
