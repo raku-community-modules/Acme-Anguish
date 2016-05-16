@@ -1,6 +1,6 @@
 #!perl6
 
 use lib 'lib';
-use Inline::Brainfuck;
+use Acme::Anguish;
 
-brainfuck 't/bf-programs/hello-world.bf'.IO.slurp;
+anguish 'examples/hello-world.ang'.IO.slurp;
