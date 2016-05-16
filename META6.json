@@ -6,7 +6,7 @@
     "depends"      : [ "Term::termios" ],
     "test-depends" : [ "Test", "Test::Output" ],
     "provides"     : {
-        "Inline::Brainfuck" : "lib/Acme/Anguish.pm6"
+        "Acme::Anguish" : "lib/Acme/Anguish.pm6"
     },
     "authors"      : [ "Zoffix Znet" ],
     "support"      : {"source"   : "git://github.com/zoffixznet/perl6-Acme-Anguish.git"}
