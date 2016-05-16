@@ -3,15 +3,14 @@
 use lib 'lib';
 use Test;
 use Test::Output;
-use Inline::Brainfuck;
+use Acme::Anguish;
+
+# output-is {
+#     anguish "\x2061" x 72 ~ "\x2063";
+# }, "H", 'Output letter "H"';
 
 output-is {
-    brainfuck '++++++++++ ++++++++++ ++++++++++ ++++++++++'
-        ~ '++++++++++ ++++++++++ ++++++++++ ++.';
-}, "H", 'Output letter "H"';
-
-output-is {
-    brainfuck 't/bf-programs/hello-world.bf'.IO.slurp;
+    anguish 't/ang-programs/hello-world.ang'.IO.slurp;
 }, "Hello World!\n", 'Hello world! program works';
 
 

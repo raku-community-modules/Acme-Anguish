@@ -3,7 +3,7 @@
 use lib 'lib';
 use Test;
 use Test::Output;
-use Inline::Brainfuck;
+use Acme::Anguish;
 
 unless %*ENV<INTERACTIVE_TESTING> {
     diag "INTERACTIVE_TESTING env var not set. Skipping this test";
@@ -14,7 +14,7 @@ unless %*ENV<INTERACTIVE_TESTING> {
 diag 'Type word "test" (press ENTER if nothing happens right after you type it)';
 
 output-is {
-    brainfuck 't/bf-programs/input1.bf'.IO.slurp;
+    anguish 't/ang-programs/input1.ang'.IO.slurp;
 }, "test", 'input -> output program works';
 
 

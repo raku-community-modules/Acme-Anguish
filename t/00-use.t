@@ -2,5 +2,5 @@
 
 use lib 'lib';
 use Test;
-use-ok 'Inline::Brainfuck';
+use-ok 'Acme::Anguish';
 done-testing;
