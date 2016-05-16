@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/zoffixznet/perl6-Inline-Brainfuck.svg)](https://travis-ci.org/zoffixznet/perl6-Inline-Brainfuck)
+[![Build Status](https://travis-ci.org/zoffixznet/perl6-Acme-Anguish.svg)](https://travis-ci.org/zoffixznet/perl6-Acme-Anguish)
 
 # NAME
 
