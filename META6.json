@@ -1,6 +1,7 @@
 {
     "perl"         : "6.c",
     "name"         : "Acme::Anguish",
+    "license"      : "Artistic-2.0",
     "version"      : "1.001001",
     "description"  : "Use Anguish programming language in your Perl 6 programs",
     "depends"      : [ "Term::termios" ],
