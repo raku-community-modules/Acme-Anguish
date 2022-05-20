@@ -1,2 +1,2 @@
-lib/.precomp
-test.p6
+.precomp/
+/Acme-Anguish-*

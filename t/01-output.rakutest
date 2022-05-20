@@ -1,9 +1,8 @@
-#!perl6
-
-use lib 'lib';
 use Test;
 use Test::Output;
 use Acme::Anguish;
+
+plan 2;
 
 output-is {
     anguish "\x2061" x 72 ~ "\x2063";
@@ -13,5 +12,4 @@ output-is {
     anguish 't/ang-programs/hello-world.ang'.IO.slurp;
 }, "Hello World!\n", 'Hello world! program works';
 
-
-done-testing;
+# vim: expandtab shiftwidth=4
