@@ -2,5 +2,9 @@ Revision history for Acme-Anguish
 
 {{$NEXT}}
 
+1.2  2024-12-29T20:15:50+01:00
+    - Add CI badge for each OS
+    - Modernize pod a bit
+
 1.1  2022-05-20T11:38:33+02:00
     - First version in zef ecosystem
