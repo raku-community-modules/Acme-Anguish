@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/raku-community-modules/Acme-Anguish/actions/workflows/test.yml/badge.svg)](https://github.com/raku-community-modules/Acme-Anguish/actions)
+[![Actions Status](https://github.com/raku-community-modules/Acme-Anguish/actions/workflows/linux.yml/badge.svg)](https://github.com/raku-community-modules/Acme-Anguish/actions) [![Actions Status](https://github.com/raku-community-modules/Acme-Anguish/actions/workflows/macos.yml/badge.svg)](https://github.com/raku-community-modules/Acme-Anguish/actions) [![Actions Status](https://github.com/raku-community-modules/Acme-Anguish/actions/workflows/windows.yml/badge.svg)](https://github.com/raku-community-modules/Acme-Anguish/actions)
 
 NAME
 ====
@@ -21,35 +21,24 @@ DESCRIPTION
 
 Here's the mapping of Brainfuck operators to *Anguish*:
 
-    >   [⁠] U+2060 WORD JOINER [Cf]
-    <   [​] U+200B ZERO WIDTH SPACE [Cf]
-    +   [⁡] U+2061 FUNCTION APPLICATION [Cf]
-    -   [⁢] U+2062 INVISIBLE TIMES [Cf]
-    .   [⁣] U+2063 INVISIBLE SEPARATOR [Cf]
-    ,   [﻿] U+FEFF ZERO WIDTH NO-BREAK SPACE [Cf]
-    [   [‌] U+200C ZERO WIDTH NON-JOINER [Cf]
-    ]   [‍] U+200D ZERO WIDTH JOINER [Cf]
+<table class="pod-table">
+<tbody>
+<tr> <td>&gt;</td> <td>[⁠]</td> <td>U+2060 WORD JOINER [Cf]</td> </tr> <tr> <td>&lt;</td> <td>[​]</td> <td>U+200B ZERO WIDTH SPACE [Cf]</td> </tr> <tr> <td>+</td> <td>[⁡]</td> <td>U+2061 FUNCTION APPLICATION [Cf]</td> </tr> <tr> <td>-</td> <td>[⁢]</td> <td>U+2062 INVISIBLE TIMES [Cf]</td> </tr> <tr> <td>.</td> <td>[⁣]</td> <td>U+2063 INVISIBLE SEPARATOR [Cf]</td> </tr> <tr> <td>,</td> <td>[﻿]</td> <td>U+FEFF ZERO WIDTH NO-BREAK SPACE [Cf]</td> </tr> <tr> <td>[</td> <td>[‌]</td> <td>U+200C ZERO WIDTH NON-JOINER [Cf]</td> </tr> <tr> <td>]</td> <td>[‍]</td> <td>U+200D ZERO WIDTH JOINER [Cf]</td> </tr>
+</tbody>
+</table>
 
 All other characters are silently ignored.
 
 The meaning of original Brainfuck characters are as follows:
 
-    >   increment the data pointer (to point to the next cell to the right).
-    <   decrement the data pointer (to point to the next cell to the left).
-    +   increment (increase by one) the byte at the data pointer.
-    -   decrement (decrease by one) the byte at the data pointer.
-    .   output the byte at the data pointer.
-    ,   accept one byte of input, storing its value in the byte at the
-        data pointer.
-    [   if the byte at the data pointer is zero, then instead of moving
-        the instruction pointer forward to the next command, jump it
-        forward to the command after the matching ] command.
-    ]   if the byte at the data pointer is nonzero, then instead of moving
-        the instruction pointer forward to the next command, jump it back
-        to the command after the matching [ command.
+<table class="pod-table">
+<tbody>
+<tr> <td>&gt;</td> <td>increment the data pointer (to point to the next cell to the right).</td> </tr> <tr> <td>&lt;</td> <td>decrement the data pointer (to point to the next cell to the left).</td> </tr> <tr> <td>+</td> <td>increment (increase by one) the byte at the data pointer.</td> </tr> <tr> <td>-</td> <td>decrement (decrease by one) the byte at the data pointer.</td> </tr> <tr> <td>.</td> <td>output the byte at the data pointer.</td> </tr> <tr> <td>,</td> <td>accept one byte of input, storing its value in the byte at the data pointer.</td> </tr> <tr> <td>[</td> <td>if the byte at the data pointer is zero, then instead of moving the instruction pointer forward to the next command, jump it forward to the command after the matching ] command.</td> </tr> <tr> <td>]</td> <td>if the byte at the data pointer is nonzero, then instead of moving the instruction pointer forward to the next command, jump it back to the command after the matching [ command.</td> </tr>
+</tbody>
+</table>
 
-EXPORTED SUBROUTINES
-====================
+SUBROUTINES
+===========
 
 anguish
 -------
